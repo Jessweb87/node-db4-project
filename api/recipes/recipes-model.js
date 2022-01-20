@@ -1,5 +1,5 @@
 function getRecipeById(recipe_id) {
-    return Promise.resolve('hooray! you got a recipe with id')
+    return Promise.resolve(`hooray! you got a recipe with id ${recipe_id}`)
 
 }
 module.exports= { getRecipeById }
