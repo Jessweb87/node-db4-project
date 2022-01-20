@@ -1,4 +1,3 @@
-
 exports.up = async function(knex) {
   await knex.schema
     .createTable('recipes', table => {
@@ -42,7 +41,6 @@ exports.up = async function(knex) {
             .onUpdate('RESTRICT')
     })
 };
-
 
 exports.down = async function(knex) {
   await knex.schema
