@@ -9,7 +9,7 @@ const server = express()
 server.use(express.json())
 
 // PLUG-IN the router
-server.use('api/recipes', recipesRouter)
+server.use('/api/recipes', recipesRouter)
 
 // DON'T FORGET TO EXPOSE THER SERVER
 module.exports = server
